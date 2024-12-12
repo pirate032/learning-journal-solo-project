@@ -2,4 +2,7 @@ html,
 body {
     margin: 0;
     padding: 0;
+    font-family: "Source Sans 3", sans-serif;
+    color: #141414;
+    max-width: 360px;
 }
