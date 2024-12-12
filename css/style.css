@@ -99,7 +99,7 @@ section {
 .blog-four,
 .blog-five,
 .blog-six {
-    /* display: none; */
+    display: none;
 }
 
 footer {
