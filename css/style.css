@@ -4,7 +4,7 @@ body {
     padding: 0;
     font-family: "Source Sans 3", sans-serif;
     color: #141414;
-    max-width: 400px;
+    max-width: 375px;
 }
 body {
     display: grid;
@@ -66,13 +66,25 @@ section {
     border: 1px solid red;
     display: flex; 
     flex-direction: column;
-    align-items: center;
+    align-items: start;
     margin-bottom: 2.25em;
 }
-
+.blog-one,
+.blog-two,
+.blog-three {
+    margin-left: 1.25em;
+    margin-right: 1.25em;
+}
+.blog-one h2,
+.blog-two h2,
+.blog-three h2 {
+    margin-bottom: 0.625em;
+    margin-top: 0
+}
 .steven-tyler,
-.slaughter {
-    max-width: 375px;
+.slaughter,
+.robert-mason {
+    margin-bottom: 1em;
 }
 
 footer {
