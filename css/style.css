@@ -4,5 +4,43 @@ body {
     padding: 0;
     font-family: "Source Sans 3", sans-serif;
     color: #141414;
-    max-width: 360px;
+    max-width: 400px;
+}
+body {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+        "...."
+        "head"
+        "main"
+        "foot"
+        "...."
+}
+header {
+    grid-area: head;
+}
+main {
+    grid-area: main;
+}
+footer {
+    grid-area: foot;
+}
+
+.hero {
+    grid-area: hero;
+    /* background-image: url("images/StevenTyler.jpg"); */
+    background-image: url("/images/JohnnySingo.jpg");
+    background-size: cover;
+    color: #FFFFFF;
+    padding: 5.3em 1.25em 1.25em 1.56em;
+    text-shadow: 2px 2px #404040;
+}
+
+.hero h1 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+.hero .date {
+    font-size: 0.75rem;
+    text-transform: uppercase;
 }
