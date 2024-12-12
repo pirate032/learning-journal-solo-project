@@ -18,17 +18,30 @@ body {
 }
 header {
     grid-area: head;
+    display: flex;
+    justify-content: space-around;
+    font-size: 0.75rem;
+}
+header p {
+    font-weight: bold;
 }
 main {
     grid-area: main;
 }
-footer {
-    grid-area: foot;
-}
 
+nav {
+    padding-top: 1em;
+}
+a {
+    text-decoration: none;
+    color: #090909;
+    text-transform: uppercase;
+}
+a:hover {
+    color: #0a9396;
+}
 .hero {
     grid-area: hero;
-    /* background-image: url("images/StevenTyler.jpg"); */
     background-image: url("/images/JohnnySingo.jpg");
     background-size: cover;
     color: #FFFFFF;
@@ -43,4 +56,23 @@ footer {
 .hero .date {
     font-size: 0.75rem;
     text-transform: uppercase;
+}
+.home-link {
+    margin-right: 8px;
+}
+footer {
+    grid-area: foot;
+    display: flex;
+    flex-direction: column;
+    background-color: #202020;
+    color: #ECECEC;
+    align-items: center;
+    font-size: 0.75em;
+}
+.site-name {
+    font-weight: bold;
+    margin-bottom: 0;
+}
+.copyright {
+    margin-top: 0;
 }
