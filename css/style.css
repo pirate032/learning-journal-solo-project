@@ -99,8 +99,16 @@ section {
 .blog-five,
 .blog-six {
     display: none;
+    margin-left: 1.25em;
+    margin-right: 1.25em;
 }
-
+.view-more {
+    text-transform: capitalize;
+    text-decoration-line: underline;
+    font-weight: bold;
+    margin-bottom: 1.5em;
+    text-align: center;
+}
 footer {
     grid-area: foot;
     display: flex;
@@ -119,23 +127,43 @@ footer {
 }
 
 @media(min-width: 1085px) {
+    header {
+        justify-content: space-between;
+        font-size: 1.25rem;
+    }
+    header p {
+        font-weight: bold;
+        margin-left: 3.125em;
+        margin-bottom: 0;
+    }
+    nav {
+        font-size: 1em;
+    }
+    .about-me {
+        margin-right: 3.125em;
+        margin-left: 2em;
+    }
     main {
         grid-area: main;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         gap: 1em;
         grid-template-areas: 
-            "... ... ...."
+            ".... .... ...."
             "head head head"
             "hero hero hero"
             "one two thre"
             "four five six"
             "foot foot foot"
-            "... ... ....";
+            ".... more ...."
+            ".... .... ....";
     }
     .hero {
-        /* width: 100%; */
-        min-height: 500px;
+        min-height: 480px;
+        padding: 20em 1.25em 1.25em 1.56em;
+    }
+    .hero p {
+        max-width: 600px;
     }
     .blog-one {
         grid-area: one;
@@ -157,5 +185,8 @@ footer {
     .blog-six {
         display: block;
         grid-area: six;
+    }
+    .view-more {
+        grid-area: more;
     }
 }
