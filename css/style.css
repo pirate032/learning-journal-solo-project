@@ -130,6 +130,7 @@ footer {
     header {
         justify-content: space-between;
         font-size: 1.25rem;
+        margin-bottom: 1em;
     }
     header p {
         font-weight: bold;
@@ -147,7 +148,7 @@ footer {
         grid-area: main;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        gap: 1em;
+        /* gap: 1em; */
         grid-template-areas: 
             ".... .... ...."
             "head head head"
@@ -188,5 +189,6 @@ footer {
     }
     .view-more {
         grid-area: more;
+        margin-bottom: 3em
     }
 }
