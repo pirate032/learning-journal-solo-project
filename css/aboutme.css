@@ -183,8 +183,9 @@ footer {
     }
 
     .hero {
-        min-height: 480px;
+        min-height: 400px;
         padding: 1em 1.5em;
+        margin-bottom: 0;
     }
     .hero p,
     .hero h3 {
