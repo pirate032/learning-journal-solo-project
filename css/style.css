@@ -102,6 +102,16 @@ section {
     margin-left: 1.25em;
     margin-right: 1.25em;
 }
+
+.steven-tyler,
+.slaughter,
+.robert-mason,
+.tesla,
+.kelly-hansen,
+.aerosmith {
+    height: 350px;
+}
+
 .view-more {
     text-transform: capitalize;
     text-decoration-line: underline;
@@ -187,6 +197,16 @@ footer {
         display: block;
         grid-area: six;
     }
+ 
+    .steven-tyler,
+    .slaughter,
+    .robert-mason,
+    .tesla,
+    .kelly-hansen,
+    .aerosmith {
+        height: 350px;
+    }
+
     .view-more {
         grid-area: more;
         margin-bottom: 3em
