@@ -19,8 +19,10 @@ body {
 header {
     grid-area: head;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     font-size: 0.75rem;
+    margin-left: 1.25em;
+    margin-right: 1.25em;
 }
 header p {
     font-weight: bold;
@@ -46,22 +48,27 @@ a:hover {
 
 .hero {
     grid-area: hero;
-    background-image: url("/images/pass-1.jpeg");
-    background-size: cover;
-    color: #FFFFFF;
-    padding: 5.3em 1.25em 1.25em 1.56em;
-    text-shadow: 2px 2px #404040;
+    padding: 0 1.25em;
 }
 
 .hero h1 {
     font-size: 2rem;
     font-weight: bold;
+    margin-top: 0;
+}
+.hero .date {
+    margin-top: 3em;
 }
 .date {
     font-size: 0.75rem;
     text-transform: uppercase;
 }
-
+.recents {
+    grid-area: rece;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 1.25em;
+}
 section {
     display: flex; 
     flex-direction: column;
@@ -112,13 +119,6 @@ section {
     height: 350px;
 }
 
-.view-more {
-    text-transform: capitalize;
-    text-decoration-line: underline;
-    font-weight: bold;
-    margin-bottom: 1.5em;
-    text-align: center;
-}
 footer {
     grid-area: foot;
     display: flex;
@@ -144,14 +144,14 @@ footer {
     }
     header p {
         font-weight: bold;
-        margin-left: 3.125em;
+        margin-left: 0;
         margin-bottom: 0;
     }
     nav {
         font-size: 1em;
     }
     .about-me {
-        margin-right: 3.125em;
+        margin-right: 1em;
         margin-left: 2em;
     }
     main {
@@ -162,18 +162,31 @@ footer {
             ".... .... ...."
             "head head head"
             "hero hero hero"
+            ".... rece ...."
             "one two thre"
-            "four five six"
             "foot foot foot"
-            ".... more ...."
             ".... .... ....";
     }
     .hero {
         min-height: 480px;
-        padding: 20em 1.25em 1.25em 1.56em;
+        padding: 1em 1.5em;
     }
-    .hero p {
-        max-width: 600px;
+    .hero p,
+    .hero h1,
+    .hero h3 {
+        width: 840px;
+        margin: 0.75em auto;
+    }
+    .hero p,
+    .hero h3,
+    .recents {
+        font-size: 1.25rem;
+    }
+    .hero .date {
+        margin: 0 auto;
+    }
+    .hero img {
+        width: 100%
     }
     .blog-one {
         grid-area: one;
@@ -184,30 +197,10 @@ footer {
     .blog-three {
         grid-area: thre;
     }
-    .blog-four {
-        display: block;
-        grid-area: four;
-    }
-    .blog-five {
-        display: block;
-        grid-area: five;
-    }
-    .blog-six {
-        display: block;
-        grid-area: six;
-    }
  
     .steven-tyler,
     .slaughter,
-    .robert-mason,
-    .tesla,
-    .kelly-hansen,
-    .aerosmith {
+    .robert-mason {
         height: 350px;
-    }
-
-    .view-more {
-        grid-area: more;
-        margin-bottom: 3em
     }
 }
